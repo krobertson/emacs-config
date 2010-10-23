@@ -1,6 +1,7 @@
 (require 'cl)
 (require 'ido)
 (ido-mode t)
+(setq ido-enable-flex-matching t)
 
 (setq tags-file-name ".TAGS")
 (setq-default tab-width 2)
