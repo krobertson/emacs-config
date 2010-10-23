@@ -1,3 +1,7 @@
+(require 'cl)
+(require 'ido)
+(ido-mode t)
+
 (setq tags-file-name ".TAGS")
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
@@ -15,3 +19,7 @@
 ;; aquamacs specific
 (when (boundp 'aquamacs-version)
   (one-buffer-one-frame-mode 0))
+
+;; remove scroll bar
+(when (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode -1))

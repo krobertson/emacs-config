@@ -22,3 +22,12 @@
 [submodule "vendor/color-theme-railscasts"]
 	path = vendor/color-theme-railscasts
 	url = git://github.com/olegshaldybin/color-theme-railscasts.git
+[submodule "vendor/gist.el"]
+	path = vendor/gist.el
+	url = git://github.com/defunkt/gist.el.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = git://github.com/technomancy/magit.git
+[submodule "vendor/rinari"]
+	path = vendor/rinari
+	url = git://github.com/eschulte/rinari.git
