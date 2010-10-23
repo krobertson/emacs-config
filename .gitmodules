@@ -31,3 +31,15 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
+[submodule "vendor/haml-mode.el"]
+	path = vendor/haml-mode.el
+	url = git://github.com/nex3/haml-mode.git
+[submodule "vendor/textile-mode.el"]
+	path = vendor/textile-mode.el
+	url = http://github.com/emacsmirror/textile-mode.git
+[submodule "vendor/twittering-mode.el"]
+	path = vendor/twittering-mode.el
+	url = git://github.com/hayamiz/twittering-mode.git
+[submodule "vendor/markdown-mode.el"]
+	path = vendor/markdown-mode.el
+	url = git://github.com/defunkt/markdown-mode.git

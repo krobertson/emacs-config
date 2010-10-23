@@ -10,11 +10,8 @@
 (load "ken/global")
 (load "ken/defuns")
 (load "ken/modes")
-
-
 (load "ken/bindings")
 (load "ken/theme")
-
 (load "ken/misc")
 
 ; (load "ken/temp_files")
@@ -26,14 +23,13 @@
   (load "ken/private"))
 
 ; (vendor 'ack)
-; (vendor 'cheat)
-(vendor 'magit)
+(vendor 'haml-mode)
 (vendor 'gist)
-; (vendor 'growl)
-; (vendor 'twittering-mode)
-; (vendor 'textile-mode)
-(vendor 'yaml-mode)
-; (vendor 'tpl-mode)
+(vendor 'magit)
+(vendor 'markdown-mode)
 (vendor 'open-file-in-github)
-
+(vendor 'textile-mode)
+; (vendor 'tpl-mode)
+(vendor 'twittering-mode)
 (vendor 'whitespace)
+(vendor 'yaml-mode)
