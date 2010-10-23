@@ -10,3 +10,10 @@
      ((file-exists-p suffix) (require library)))
     (when (file-exists-p (concat defunkt ".el"))
       (load defunkt))))
+
+(defun kr-ido-find-project-file ()
+  "Load a file under one of the source projects."
+  (interactive)
+  (ido-find-file-in-dir
+    (concat "~/source/" (ido-completing-read "Project: "
+                          (directory-files "~/source/" nil "^[^.]")))))
