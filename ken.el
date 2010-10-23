@@ -9,9 +9,14 @@
 ; (load "ken/lisp")
 (load "ken/global")
 (load "ken/defuns")
-; (load "ken/bindings")
 (load "ken/modes")
+
+
+(load "ken/bindings")
 (load "ken/theme")
+
+(load "ken/misc")
+
 ; (load "ken/temp_files")
 ; (load "ken/github")
 ; (load "ken/git")
@@ -30,3 +35,5 @@
 (vendor 'yaml-mode)
 ; (vendor 'tpl-mode)
 (vendor 'open-file-in-github)
+
+(vendor 'whitespace)

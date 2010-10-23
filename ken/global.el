@@ -12,6 +12,9 @@
 (setq vc-handled-backends nil)
 (cua-mode nil)
 (setq gist-view-gist t)
+(menu-bar-mode -1)
+
+(set-face-font 'default "-apple-Mensch-medium-normal-normal-*-11-*-*-*-m-0-iso10646-1")
 
 ;; works in both aquamacs and carbon
 (when (functionp 'tool-bar-mode)
