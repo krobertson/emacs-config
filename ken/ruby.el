@@ -33,7 +33,9 @@
             (set (make-local-variable 'tab-width) 2)
             (define-key ruby-mode-map "\C-m" 'ruby-reindent-then-newline-and-indent)
             (require 'ruby-electric)
-            (ruby-electric-mode t)))
+            (ruby-electric-mode t)
+            (linum-mode)
+            (setq truncate-lines t)))
 
 (defadvice ruby-do-run-w/compilation (before kill-buffer (name cmdlist))
   (let ((comp-buffer-name (format "*%s*" name)))
