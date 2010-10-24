@@ -89,3 +89,37 @@
           (string-match "^\\s-+$" (buffer-substring-no-properties (point) p)))
         (delete-region (- p movement) p)
         (call-interactively 'backward-delete-char-untabify)))))
+
+(defun ido-recentf ()
+  "Use ido to select a recently opened file from the `recentf-list'"
+  (interactive)
+  (let ((home (expand-file-name (getenv "HOME"))))
+	(find-file
+    (ido-completing-read "Recentf open: "
+      (mapcar (lambda (path)
+        (replace-regexp-in-string home "~" path))
+        recentf-list)
+      nil t))))
+
+;; Use ido to find files in tags file
+(defun ido-find-file-in-tag-files ()
+  (interactive)
+  (save-excursion
+	(let ((enable-recursive-minibuffers t))
+	  (visit-tags-table-buffer))
+	(find-file
+	 (expand-file-name
+	  (ido-completing-read
+	   "Project file: " (tags-table-files) nil t)))))
+
+;; Find tag using ido
+(defun ido-find-tag ()
+  "Find a tag using ido"
+  (interactive)
+  (tags-completion-table)
+  (let (tag-names)
+	(mapc (lambda (x)
+			(unless (integerp x)
+			  (push (prin1-to-string x t) tag-names)))
+          tags-completion-table)
+	(find-tag (ido-completing-read "Tag: " tag-names))))

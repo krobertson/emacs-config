@@ -11,7 +11,9 @@
 (global-set-key [f8] 'delete-window)
 (global-set-key [(meta H)] 'delete-other-windows)
 
+(global-set-key (kbd "C-x C-r") 'ido-recentf)
 (global-set-key (kbd "C-x C-d") 'kr-ido-find-project-file)
+(global-set-key (kbd "C-a") 'kr-mark-line)
 
 (define-key *textmate-mode-map* [(meta /)] 'comment-or-uncomment-region-or-line)
 (define-key *textmate-mode-map* [C-return] 'tf-textmate-ext-previous-line)
