@@ -5,3 +5,7 @@
 ;; so it won't be version-controlled. The idea is to
 ;; make this file load other version-controlled files.
 (load "local")
+
+;; use this to start server for emacsclient
+(if (not (boundp 'server-process))
+   (server-start))
