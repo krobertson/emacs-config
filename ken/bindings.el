@@ -17,4 +17,7 @@
 (define-key *textmate-mode-map* (kbd "M-[") 'align)
 (define-key *textmate-mode-map* (kbd "A-t") 'new-tab)
 
+;;(windmove-default-keybindings)
+;;(windmove-default-keybindings 'meta)
 (global-set-key [C-tab] 'other-window)
+(global-set-key [M-tab] (lambda () (interactive) (other-window -1)))
