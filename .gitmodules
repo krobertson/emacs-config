@@ -43,3 +43,6 @@
 [submodule "vendor/markdown-mode.el"]
 	path = vendor/markdown-mode.el
 	url = git://github.com/defunkt/markdown-mode.git
+[submodule "vendor/smex.el"]
+	path = vendor/smex.el
+	url = git://github.com/nonsequitur/smex.git

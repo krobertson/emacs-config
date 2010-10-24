@@ -28,8 +28,11 @@
 (vendor 'magit)
 (vendor 'markdown-mode)
 (vendor 'open-file-in-github)
+(vendor 'smex)
 (vendor 'textile-mode)
 ; (vendor 'tpl-mode)
 (vendor 'twittering-mode)
 (vendor 'whitespace)
 (vendor 'yaml-mode)
+
+(smex-initialize)
