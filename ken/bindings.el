@@ -2,6 +2,7 @@
 (global-set-key "\C-c\C-g" 'gist-buffer-confirm)
 (global-set-key [(control shift k)] 'kill-current-line)
 (global-set-key (kbd "<escape>")      'keyboard-escape-quit)
+(global-set-key (kbd "<DEL>") 'backward-delete-whitespace-to-column)
 
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
 (global-set-key (kbd "C-c y") 'bury-buffer)
