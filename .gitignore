@@ -1,4 +1,5 @@
-defunkt/custom.el
+ken/custom.el
+auto-save-list
 url/*
 .DS_Store
 local.el
