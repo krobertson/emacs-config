@@ -19,7 +19,7 @@ rule ".elc" => ".el" do |t|
   end
 end
 
-rake :install do
+task :install do
   current_path = File.expand_path '.'
   %x{ ln -snf #{current_path}/emacs.el ~/.emacs }
   %x{ ln -snf #{current_path} ~/.emacs.d }
