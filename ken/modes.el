@@ -13,6 +13,10 @@
      (set-face-foreground 'magit-diff-add "green3")
      (set-face-foreground 'magit-diff-del "red3")))
 
+; javascript / js2
+(add-to-list 'auto-mode-alist '("\\.json$" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 ; markdown
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))

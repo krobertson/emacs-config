@@ -23,8 +23,9 @@
   (load "ken/private"))
 
 ; (vendor 'ack)
-(vendor 'haml-mode)
 (vendor 'gist)
+(vendor 'haml-mode)
+(vendor 'js2-mode)
 (vendor 'magit)
 (vendor 'markdown-mode)
 (vendor 'open-file-in-github)
