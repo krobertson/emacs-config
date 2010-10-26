@@ -1,9 +1,6 @@
 ;; others
 (load "ken/ruby")
 
-;; all modes
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
 ;; emacs
 (define-key emacs-lisp-mode-map (kbd "A-r") 'eval-buffer)
 
