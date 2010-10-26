@@ -1,7 +1,8 @@
 (require 'cl)
 
 ;; My preferred font
-(set-face-font 'default "-apple-Mensch-medium-normal-normal-*-11-*-*-*-m-0-iso10646-1")
+;(set-face-font 'default "-apple-Mensch-medium-normal-normal-*-11-*-*-*-m-0-iso10646-1")
+(set-face-font 'default "-apple-inconsolata-medium-r-normal--12-0-72-72-m-0-iso10646-1")
 
 ;; Setup ido mode
 (require 'ido)
